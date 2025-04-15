@@ -1,0 +1,655 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body {
+  overflow-x: hidden;
+  width: 100%;
+} */
+/* ------------------------------------- Header ---------------------------------------- */
+.header {
+  height: 90px;
+  width: 100%;
+  background-color: #fee2b3;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0 10px;
+  font-family: "Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif";
+}
+
+.nav {
+  margin: 0 149px;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+  color: #000;
+  padding: 20px 90px;
+  line-height: 70px;
+}
+
+ul {
+  float: right;
+  /* display: flex; */
+  margin-right: 97px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 27px;
+  margin: 0 18px;
+  padding: 20px 0px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+a.active,
+a:hover {
+  color: #000;
+  transition: 0.4s;
+}
+
+/* Dropdown  */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  background-color: #fff;
+  min-width: 200px;
+  border-top: 2px solid #fee2b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-content li {
+  display: block;
+  padding: 7px 20px 0 0;
+}
+
+.dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #fee2b3;
+  color: #000;
+}
+
+/* select {
+    padding: 10px 15px;
+    border: 2px solid #fee2b3;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+} */
+
+/* --------------------------------------- Toggle ---------------------------------------- */
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* ------------------------------------------- Section-1 Hero Section ------------------------------------------------ */
+.sec-1 {
+  height: 859px;
+  width: 100%;
+  background-image: url(../Ass.Notary/hero_bg_1.jpg);
+  background-size: cover;
+  background-attachment: center;
+  position: relative;
+  /* background-color: #1b9bff; */
+}
+
+.hero-content {
+  display: flex;
+  /* background-color: #1b9bff; */
+  top: 179px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 265px;
+}
+.hero-con {
+  padding: 0 49px 30px 0px;
+  /* background: #000; */
+}
+.hero-con strong {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+}
+
+.hero-con h1 {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 0 30px 0 0;
+  padding: 0 40px 10px 0px;
+  color: white;
+}
+.hero-con p {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+  margin: 0 30px 0 0;
+  padding: 0 80px 10px 0;
+  color: white;
+}
+
+.hero-form {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  max-width: 440px;
+  padding: 40px;
+  background: white;
+  border-radius: 4px;
+  font-family: "Playfair Display";
+  position: relative;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  background: white;
+  border: 1px solid #495057;
+}
+#bookApp h1 {
+  font-weight: 300;
+  /* color: #364d59; */
+  color: rgb(54, 77, 89);
+  line-height: 24px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#bookApp button {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #fee2b3;
+  border: none;
+}
+
+/* ------------------------------------------------- Section-2 Practice-Area ------------------------------------------------ */
+.sec-2 {
+  height: 907px;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 90px 0 0;
+}
+.prc-area {
+  text-align: center;
+  /* margin-bottom: 20px; */
+  padding-bottom: 20px;
+  position: relative;
+  color: #364d59;
+}
+.sec-heading {
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 300;
+  color: #364d59;
+}
+.sec-heading strong {
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+}
+.prc-area p {
+  line-height: 27px;
+  font-weight: 300;
+  color: #364d59;
+}
+
+.prc-box1,
+.prc-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 270px;
+  width: 290px;
+  margin: 24px 20px;
+  padding: 40px 30px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-size: 14px;
+}
+.prc-icon {
+  font-size: 49px;
+  line-height: 80px;
+  padding-top: 10px;
+  color: #fee2b3;
+}
+.card h3 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 7px 0;
+}
+.card p {
+  color: #999;
+  line-height: 24px;
+}
+
+/*------------------------------------------- Section-3 Reliable Effect ---------------------------------------------*/
+.reliable {
+  height: 560px;
+  width: 100%;
+  /* background-color: #4c9ff1; */
+}
+
+.reliable-effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 230px;
+  height: 560px;
+}
+
+.re-img {
+  display: flex;
+}
+.re-img img {
+  height: 420px;
+}
+.re-img1 {
+  vertical-align: middle;
+  padding: 0 14px 0px;
+}
+
+.re-con {
+  padding: 0 40px 0 90px;
+}
+
+.re-con h3 {
+  font-size: 27px;
+  line-height: 34px;
+  font-weight: 300;
+  color: #364d59;
+  font-family: "Playfair Display";
+  padding: 0 0 20px;
+}
+
+.re-con h3 strong {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 900;
+  color: #364d59;
+  font-family: "Playfair Display";
+}
+
+.re-con p {
+  /* font-size: 28px; */
+  line-height: 27px;
+  font-weight: 300;
+  color: #364d59;
+  font-family: "roboto";
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+
+.re-con p a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #f6d38d;
+  padding: 14px 28px;
+  border-radius: 4px;
+  margin: 20px 0 0;
+}
+
+/*------------------------------------------ Section-4 Happy Customer ---------------------------------------------*/
+.sec-4 {
+  height: 499px;
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+.sec4-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #364d59;
+}
+.sec4-cards {
+  display: flex;
+  justify-content: center;
+}
+.hap-custm {
+  display: flex;
+}
+.hap-card {
+  height: 272px;
+  width: 330px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 50px 10px 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.hap-img {
+  display: flex;
+  padding: 40px 30px 20px;
+}
+.hap-img img {
+  border-radius: 49px;
+  height: 50px;
+  width: 50px;
+}
+.hap-con {
+  font-weight: 300;
+  line-height: 21px;
+  color: #364d59;
+  padding: 0 20px 0;
+}
+.hap-2nd {
+  color: #ccc;
+  line-height: 21px;
+}
+.hap-card p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 31px;
+  color: #364d59;
+  padding: 0 50px 0 30px;
+}
+
+/*------------------------------------------ Section-5 Legal Solutions ---------------------------------------------*/
+.sec-5 {
+  height: 697px;
+  /* width: 100%;s */
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  background: #d98686;
+}
+.legal-solution {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 10px 229px;
+}
+.leg-img img {
+  width: 100%;
+  height: auto;
+}
+.leg-content{
+  width: 349px;
+}
+.leg-content 
+.sec-5-heading {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  color: #364d59;
+  font-family: "Playfair Display";
+  padding: 0 20px;
+  /* background-color: #000; */
+}
+.sec-5-heading strong {
+  font-weight: 700;
+}
+.leg-content p {
+  /* font-size: 32px; */
+  line-height: 27px;
+  font-weight: 300;
+  color: #364d59;
+  font-family: "Playfair Display";
+  padding: 0 14px;
+}
+.leg-con{
+  padding-top: 20px;
+}
+.leg-content ul li {
+  display: flex;
+  flex-direction: column;
+  color: #364d59;
+}
+
+/* ------------------------- Accordion-item --------------------- */
+.accordion{
+  width: 349px;
+}
+.accordion-item h2{
+  font-weight: 400;
+  line-height: 24px;
+  padding: 30px;
+}
+.accordion-body{
+  display: none;
+}
+
+/* -------------------------------------------- Responsive ----------------------------------------------- */
+@media screen and (max-width: 992px) {
+  .logo {
+    font-size: 28px;
+    padding-left: 30px;
+  }
+  .nav ul li a {
+    font-size: 16px;
+    display: none;
+  }
+  .checkbtn {
+    display: block;
+  }
+  /* ------------------------------------------- Hero_Section ------------------------------------------- */
+  .sec-1 {
+    height: 939px;
+    width: 100%;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1b9bff; */
+    top: 130px;
+    margin: 0 80px;
+  }
+
+  .hero-con {
+    padding: 40px;
+    margin: 70px;
+    width: 640px;
+    height: 110px;
+  }
+  .hero-con strong {
+    font-weight: 700;
+    font-size: 42px;
+  }
+  .hero-con h1 {
+    margin: 0 0px 8px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero-con p {
+    font-size: 16px;
+    margin: 0 0px 17px;
+    padding: 0;
+  }
+
+  .hero-form {
+    padding: 40px;
+    margin: 70px 0 -300px;
+    max-width: 555px;
+    height: 440px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* -------------------------------------------------Practice-Area-------------------------------------------------- */
+  .sec-2 {
+    height: 1894px;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 90px 0 0;
+  }
+  .prc-area p {
+    line-height: 34px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #364d59;
+  }
+
+  .prc-box1,
+  .prc-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    height: 220px;
+    width: 555px;
+  }
+
+  /*-----------------------------------------Reliable Effect----------------------------------------------*/
+  .reliable {
+    height: 490px;
+    width: 100%;
+    background-color: #4c9ff1;
+  }
+
+  .reliable-effect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 300px;
+    height: 560px;
+  }
+
+  .re-img {
+    display: flex;
+  }
+  .re-img img {
+    height: 420px;
+    padding: 0 4px 0px;
+  }
+
+  .re-con {
+    width: 700px;
+    height: 249px;
+  }
+
+  .re-con h3 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #364d59;
+    font-family: "Playfair Display";
+    padding: 0 0 20px;
+    margin-top: 20px;
+  }
+
+  .re-con p {
+    /* font-size: 28px; */
+    line-height: 27px;
+    font-weight: 300;
+    color: #364d59;
+    font-family: "roboto";
+    padding: 0 0 30px;
+    margin-bottom: 20px;
+  }
+
+  .re-con p a {
+    color: #212529;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #f6d38d;
+    padding: 14px 28px;
+    border-radius: 4px;
+    margin: 20px 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e2c;
+    top: 80px;
+    left: 100%;
+    /* right: 200; */
+    text-align: center;
+    transition: all 0.4s;
+  }
+  .nav ul li {
+    display: block;
+    margin: 49px 0;
+    line-height: 30px;
+  }
+  .nav ul li a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    background-color: #1b9bff;
+    transition: 0.4s;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  /* ------------------------------------------- Hero_Section ------------------------------------------- */
+   .sec-1 {
+    height: 939px;
+    width: 100%;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1b9bff; */
+    top: 130px;
+    margin: 0 80px;
+  }
+}
+
+@media screen and (max-width: 578) {
+}
